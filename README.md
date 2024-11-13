@@ -1,12 +1,63 @@
 # VF Embedded bot Template README
 ## A Template for setting up a Voiceflow integration app for a live embedded bot into a webpage (Wordpress)
----
+
 ### Overview
-An Application to intergrate a custom UI to a wordpress site controlling a voiceflow bot. This can have the ability to capture the users browsers language as well as capturing the exact url the user is on within the website, controlling how the converstion is handled on the voiceflow end, allowing for very custom converstion flow. Set up to work in a Wordpress site but can work anywhere.
+An Application to intergrate a custom UI to a wordpress site controlled by a voiceflow bot. This can have the ability to capture the users browsers language as well as capturing the exact url the user is on within the website, controlling how the converstion is handled on the voiceflow end, allowing for very customised converstion flow. Set up to work in a Wordpress site but can work anywhere.
 
+---
+### Setting Up the Template Repository
 
+1. Create New Repository Using Template:
+   - On GitHub, click on "Use this template" button on the template repository page.
+   - Name your new repository and click "Create repository from template".
 
+2. Clone the New Repository (or click on open a codespace or gitpod enviroment if available):
 
+   - Open a terminal and use the HTTPS or SSH link to clone the newly created repository:
+
+   `git clone <YOUR_NEW_REPO_URL>`
+
+   - Move into the project directory:
+
+   `cd <YOUR_NEW_REPO_NAME>`
+
+3. Install Dependencies:
+
+   - Ensure you have Node.js installed. Version 18+ is recommended.
+   - Install the necessary dependencies by running:
+
+   `npm install`
+
+4. Configure Environment Variables:
+
+   - Create a .env file in the root directory:
+
+   `touch .env`
+
+   - Populate it with the following variables (replace with your actual values):
+
+   `VOICEFLOW_API_KEY=your_voiceflow_api_key_here
+   VOICEFLOW_VERSION_ID=your_voiceflow_version_id_here
+   PORT=5000 (optional, defaults to 5000 if not set)`
+
+5. Run the Server Locally:
+
+   - To start the server locally, run:
+
+   `npm run dev`
+
+   - The server will be accessible on http://localhost:5000.
+
+6. Integrate Frontend UI with Your Website:
+
+   - Copy the frontend HTML and JavaScript code from the README.
+   - Insert it into your website where you want the chatbot UI to appear (e.g., in a WordPress footer using a plugin).
+
+### Running and Testing:
+- Access Locally: Open http://localhost:5000 and interact with the backend.
+- Deploy: Deploy the project to a hosting service like Heroku or similar, and update your frontend to use the deployed API endpoint.
+
+---
 ### Technical Overview
 This template helps you set up an integration between a Voiceflow chatbot and a custom user interface (UI) embedded into a webpage, such as a WordPress site. The server application serves as the backend that facilitates communication between a chatbot created in Voiceflow and users interacting with it on your website.
 
