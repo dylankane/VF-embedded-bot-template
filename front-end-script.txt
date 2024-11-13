@@ -1,4 +1,12 @@
+To be added to the footer of the website where you want to embed. With a placeholder div where ever you want to display the chat bot
 
+<div id="chat-placeholder"></div>
+
+In this script you can edit the front end appearance too. 
+There is two placeholders that have to be set to you backend url either local or deployed it will look like this with the /api/chat added to the end:
+https://embedded-assistant-d67a1ffd976e.herokuapp.com/api/chat
+
+<script>
 (function() {
   // Collect metadata (collecting URL and language)
   const metadata = {
@@ -227,7 +235,7 @@
 
     // Send initial request to the backend on page load
     window.addEventListener('load', () => {
-      fetch('https://embedded-assistant-d67a1ffd976e.herokuapp.com/api/chat', {
+      fetch('ADD YOUR DEPLOYED OR LOCAL URL WITH THIS=>/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -296,7 +304,7 @@
     chatBox.scrollTop = chatBox.scrollHeight;
 
     // Send user message to backend
-    fetch('https://embedded-assistant-d67a1ffd976e.herokuapp.com/api/chat', {
+    fetch('ADD YOUR DEPLOYED OR LOCAL URL WITH THIS=>/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -334,4 +342,4 @@
     });
   }
 })();
-
+</script>
