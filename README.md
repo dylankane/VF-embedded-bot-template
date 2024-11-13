@@ -2,7 +2,7 @@
 ## A Template for setting up a Voiceflow integration app for a live embedded bot into a webpage (Wordpress)
 
 ### Overview
-An Application to intergrate a custom UI to a wordpress site controlled by a voiceflow bot. This can have the ability to capture the users browsers language as well as capturing the exact url the user is on within the website, controlling how the converstion is handled on the voiceflow end, allowing for very customised converstion flow. Set up to work in a Wordpress site but can work anywhere.
+This application is a Node.js backend server that integrates with a Voiceflow conversational backend to manage a chatbot's conversation logic. The backend is connected to a frontend JavaScript-based custom UI that is embedded into web pages, such as WordPress. The backend processes user inputs, manages session state, and communicates with Voiceflow, while the frontend handles user interactions and presents a conversational interface.
 
 ---
 ### Setting Up the Template Repository
